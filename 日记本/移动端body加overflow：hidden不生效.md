@@ -1,0 +1,1 @@
+- 最近遇到一个问题 移动端出现横向滚动条，然后不想要它出现滚动条，给body加了overflow:hidden 不管用  在此基础上，给html加overflow：hidden，然后设置body：宽度100%；

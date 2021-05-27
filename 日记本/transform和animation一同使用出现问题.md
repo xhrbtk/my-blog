@@ -1,0 +1,2 @@
+- 如果要给一个盒子同时使用transform和animation，就会出现transform不生效的问题。
+用一个div包裹一个div的方式，给外面的div用animation，给里面的div用transform

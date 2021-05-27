@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有赞一面</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">有赞一面</h1>
+        <div class="show-content">
+          <p>- 常用状态码？</p><p>```</p><p>100-199:客户端还在进行一些操作</p><p>200-299：用于表示请求成功</p><p>300-399：文件已被移动，并且长包含新的地址信息</p><p>400-499：客户端错误</p><p>500-599：服务器错误</p><p>301：从定向</p><p>302：临时重定向</p><p>304：本身是为了做缓存，请求资源没变化，告诉浏览器用本地缓存</p><p>先跟服务器要地址，地址返回了，再根据地址跟服务器要一次资源，也就是说他跟服务器交流了两次，所以叫重定向。</p><p>403：资源不可用，服务器理解客户端的请求，但禁止访问</p><p>404：找不到指定位置资源</p><p>500：拂去其遇到了意料不到的情况，不能完善客户端的请求</p><p>502：代理坏掉了</p><p>504：找到网关，但是请求超时，没有返回请求</p><p>```</p><p>- CSS问得比较多，比较细，盒模型，</p><p>```</p><p>position:static:该关键字指定元素使用正常的布局行为，即元素在文档常规流中当前的布局位置。此时，top,right,bottom,left,和z-index属性无效</p><p>position:relative;元素放置在未添加定位时的位置，再在不改变页面布局的前提下调整元素位置（因此会在次元素未添加定位时所在位置留下空白）</p><p>position:absolute:不为元素预留空间，通过制定元素相对于最近的非static定位祖先元素的偏移，来确定位置。绝对定位的元素可以设置外边距，且不会与其他边距合并（脱离文档流）</p><p>position:fixed:不为元素预留空间，而是通过指定元素相对于屏幕视口的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页固定位置。fixed属性会创建新的层叠上下文。当元素祖先的transform属性非none时，容器由视口改为该祖先</p><p>sticky：盒位置根据正常流计算（这称为正常流动中的位置），然后相对于该元素在流中的flow root和containing block定位。</p><p>```</p><p>- JS数据类型</p><p>- http缓存</p><p>- 排序算法复杂度</p><p>- 快排实现</p><p>- 跨域，jsonp有什么限制</p><p>```</p><p>jsonp相当于在HTML标签动态创建了一个script标签src="URL/path/to/data.js"，所以说jsonp的数据可以使任意的格式，所以说jsonp仅仅可以发送get请求，不能发送post请求</p><p>```</p><p>- TCP三次握手，为什么是三次</p><p>```</p><p>1.客户端向服务器端发送一个带syn标志的数据包给对方。</p><p>2.服务器端收到后，回传一个syn/ack标志的数据包以示传达确认信息</p><p>3.客户端再回传一个带ack标志的数据包，代表握手结束</p><p>三次握手目的：为了防止已经失效的连接请求报文段突然又传送到了服务端，因而产生错误。</p><p>为什么握手三次不握手4次5次：三次是保证双方互相明确对方能收能发的最低值。理论上将不论握手多少次都不能确认一条信道是“可靠的”，但同过3次握手至少可以确认它是“可用的”，再往上加握手次数不过是提高“它是可用的”这个结论的可信度。</p><p>```</p><p>- 盒模型</p><p>```</p><p>box-sizing:content-box==内容区宽度</p><p>border-box:width=内容去宽度+padding+border</p><p>在设置盒模型为border-box之后，设置background的时候包含：内容区宽度+padding，不包括border</p><p>在设置盒模型为content-box之后，设置background的时候包含：内容区宽度+padding，不包括border</p><p>```</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

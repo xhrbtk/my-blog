@@ -1,0 +1,1 @@
+querySelector（）只会获取返回匹配指定css选择器元素的第一个子元素。如果要返回所有匹配元素，需要使用querySelectorAll（）方法替代，querySelectorAll返回的是一个类数组对象。query选择符选出来的元素及元素数组是静态的，而getElement这种方法选出的元素是动态的。静态的就是说选出的所有元素的数组，不会随着文档操作而改变，在使用的时候getElement这种方法性能比较好，query选择符则比较方便。
