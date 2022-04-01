@@ -38,7 +38,7 @@ console.log(result.code)
 - 而ast可以明确的告诉你每个let 的意思
 
 ### babel工具
-- babel 可以把高级代码翻译我ES5
+- babel 可以把高级代码翻译成ES5
 - @babel/parser
 - @babel/traverse
 - @babel/generator
