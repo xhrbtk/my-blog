@@ -4,7 +4,7 @@
 - generate 把ast变成代码code2
 - code ->> ast -->> ast2 --> code2
 ```
-// 举个例子
+// 举个🌰
 import { parse } from "@babel/parser"
 import traverse from "@babel/traverse"
 import generate from "@babel/generator"
@@ -44,6 +44,19 @@ console.log(result.code)
 - @babel/generator
 - @babel/core 包含前三者
 - @babel/preset-env 内置很多规则
+- 如果使用babel/core 则上面的🌰可以变为下面的形式
+```
+import { parse } from "@babel/parser"
+import * as babel from '@babel/core'
+
+const code = `let a = 'let'; let b = 2; const c = 3`
+const ast = parse(code, { sourceType: 'module' })
+
+const result = babel.transformFromAstSync(ast, code, {
+    presets: ['@babel/preset-env']
+})
+console.log(result.code)
+```
 
 ### 循环依赖
 - 有的循环依赖可以正常执行
